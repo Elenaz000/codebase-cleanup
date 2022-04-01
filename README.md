@@ -45,3 +45,26 @@ Run the game:
 ```sh
 python app/game.py
 ```
+
+
+Run the inventory report:
+
+```sh
+python app/groceries.py
+```
+
+
+
+Run the stocks report:
+
+```sh
+python app/stocks.py
+```
+
+
+
+Run the crypto report:
+
+```sh
+python app/crypto.py
+```
