@@ -8,7 +8,9 @@
 import os
 
 from app.utils import to_usd
+
 from app.utils import file_csv
+
 
 # checks to see if a products.csv file exists. If not, it uses the default
 if os.path.isfile(file_csv("data", "products.csv")) == True:

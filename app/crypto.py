@@ -9,7 +9,9 @@ from dotenv import load_dotenv
 import requests
 
 from app.utils import to_usd
+
 from app.alphavantage_service import fetch_crypto_data
+
 
 load_dotenv()
 
