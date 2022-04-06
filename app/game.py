@@ -4,6 +4,17 @@ from random import choice
 
 
 def determine_winner(user_choice, computer_choice):
+
+    """
+    This is a docstring. It tells us what this function is about.
+    This function is used to determine the winner between user's choice(u) and computer's choice(c) after taking input 
+    and return the winner's choice.
+    Example of invoking the function.
+
+    Invoke like this: determine_winner(u, c)
+
+    if the user input is paper, computer input is rock, the function will determine the winner is user and return paper.
+    """
     #return "paper"
     winners = {
         "rock": {
