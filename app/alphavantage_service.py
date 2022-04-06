@@ -31,11 +31,19 @@ def fetch_stocks_data(symbol):
     # url = ...
     # make a request
     # return some data
-    return "TODO"
+    #return "TODO"
+    url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={ALPHAVANTAGE_API_KEY}&datatype=csv"
+    return url
+
+
 
 
 def fetch_unemployment_data():
     # url = ...
     # make a request
     # return some data
-    return "TODO"
+    # return "TODO"
+    url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={ALPHAVANTAGE_API_KEY}"
+    response = requests.get(url)
+    parsed_response = json.loads(response.text)
+    return parsed_response
