@@ -1,3 +1,5 @@
+import os
+
 def to_usd(my_price):
     """
     This is a docstring. It tells us what this function is about.
@@ -24,3 +26,8 @@ if __name__ == "__main__":
     price = input("Please choose a price like 4.9999")
 
     print(to_usd(float(price)))
+
+
+def read_csv (filename):
+    return os.path.join(os.path.dirname(__file__), "..", "data", filename)
+
