@@ -28,6 +28,6 @@ if __name__ == "__main__":
     print(to_usd(float(price)))
 
 
-def read_csv (filename):
-    return os.path.join(os.path.dirname(__file__), "..", "data", filename)
+def file_csv (foldername, filename):
+    return os.path.join(os.path.dirname(__file__), "..", foldername, filename)
 
